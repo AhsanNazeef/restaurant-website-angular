@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins/Poppins-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Heebo";
+  src: url("./assets/fonts/Heebo/Heebo-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Mochiy Pop One";
+  src: url("./assets/fonts/Mochiy_Pop_One/MochiyPopOne-Regular.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Pacifico";
+  src: url("./assets/fonts/Pacifico/Pacifico-Regular.ttf") format("truetype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins';
+}
