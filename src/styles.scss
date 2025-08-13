@@ -1,29 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face {
-  font-family: "Poppins";
-  src: url("./assets/fonts/Poppins/Poppins-VariableFont_wght.ttf")
-    format("truetype");
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins/Poppins-VariableFont_wght.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "Heebo";
-  src: url("./assets/fonts/Heebo/Heebo-VariableFont_wght.ttf")
-    format("truetype");
+  font-family: 'Heebo';
+  src: url('./assets/fonts/Heebo/Heebo-VariableFont_wght.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "Mochiy Pop One";
-  src: url("./assets/fonts/Mochiy_Pop_One/MochiyPopOne-Regular.ttf")
-    format("truetype");
+  font-family: 'Mochiy Pop One';
+  src: url('./assets/fonts/Mochiy_Pop_One/MochiyPopOne-Regular.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "Pacifico";
-  src: url("./assets/fonts/Pacifico/Pacifico-Regular.ttf") format("truetype");
+  font-family: 'Pacifico';
+  src: url('./assets/fonts/Pacifico/Pacifico-Regular.ttf') format('truetype');
 }
 
 * {
   padding: 0;
   margin: 0;
   font-family: 'Poppins';
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 38.5px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 1);
+}
+
+p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);
+}
+
+/* Tablet styles */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 62px;
+  }
+
+  p {
+    font-size: 16px;
+  }
 }
