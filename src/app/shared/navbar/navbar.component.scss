@@ -1,0 +1,116 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(15, 23, 43, 1);
+  padding-block: 13px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 3px;
+}
+
+.logo-text {
+  font-family: 'Mochiy Pop One';
+  color: rgba(254, 161, 22, 1);
+}
+
+.logo-image {
+  height: 44px;
+  width: 44px;
+}
+
+.nav-links {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-block: 0;
+  transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-links.open {
+  max-height: 500px;
+  opacity: 1;
+  padding-block: 17px;
+}
+
+app-button {
+  margin-block-start: 10px;
+  --button-height: 47px;
+  --button-width: 163px;
+}
+
+a {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+
+  &:hover {
+    color: rgba(254, 161, 22, 1);
+  }
+
+  &.active {
+    color: rgba(254, 161, 22, 1);
+  }
+}
+
+.menu-icon {
+  color: rgba(255, 255, 255, 0.55);
+  cursor: pointer;
+  align-self: center;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 5px;
+  padding: 8px 13px;
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+  :host {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-block: 22px;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: transparent;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    max-height: unset;
+    opacity: 1;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .nav-links.open {
+    padding-block: unset;
+  }
+
+  app-button {
+    margin-block-start: unset;
+  }
+
+  a {
+    text-transform: uppercase;
+  }
+
+  .logo-image {
+    height: 48px;
+    width: 48px;
+  }
+}
