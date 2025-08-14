@@ -37,6 +37,10 @@ p {
   color: rgba(255, 255, 255, 1);
 }
 
+.container {
+  padding: 0 22px;
+}
+
 /* Tablet styles */
 @media (min-width: 768px) {
   h1 {
@@ -46,15 +50,37 @@ p {
   p {
     font-size: 16px;
   }
+
+  .container {
+    padding: 0 100px;
+  }
 }
 
-/* Desktop styles */
+/* Desktop styles large */
 @media (min-width: 1024px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 0 150px;
+  }
+}
+
+/* Desktop styles xl */
+@media (min-width: 1440px) {
   h1 {
     font-size: 62px;
   }
 
   p {
     font-size: 16px;
+  }
+  .container {
+    padding: 0 250px;
   }
 }

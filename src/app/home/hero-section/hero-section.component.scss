@@ -7,7 +7,7 @@
   background-image: url('/assets/images/bg-hero.png');
   background-size: cover;
   background-position: center;
-  padding: 145px 22px;
+  padding-block: 145px;
   width: 100vw;
   z-index: 1;
   gap: 46px;
@@ -42,7 +42,7 @@ app-button {
 /* Tablet styles */
 @media (min-width: 768px) {
   :host {
-    padding: 90px 100px;
+    padding-block: 90px;
   }
 
   img {
@@ -56,6 +56,8 @@ app-button {
   :host {
     height: 764px;
     flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
   }
 
   .hero-content-left {
@@ -64,6 +66,14 @@ app-button {
     align-items: flex-start;
   }
 
+  img {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+/* Desktop styles xl */
+@media (min-width: 1440px) {
   img {
     height: 500px;
     width: 500px;
