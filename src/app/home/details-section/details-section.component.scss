@@ -1,0 +1,28 @@
+:host {
+  display: flex;
+  padding-block: 96px;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+app-details-card {
+  flex: 1 1 100%;
+}
+
+/* Tablet styles */
+@media (min-width: 768px) {
+  app-details-card {
+    flex: 1 1 calc(50% - 24px);
+  }
+}
+
+/* Desktop styles xl */
+@media (min-width: 1440px) {
+  :host {
+    flex-direction: row;
+    flex-wrap: unset;
+  }
+  app-details-card {
+    flex: unset;
+  }
+}
