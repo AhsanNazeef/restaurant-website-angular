@@ -32,9 +32,28 @@ h1 {
   color: rgba(255, 255, 255, 1);
 }
 
+h2 {
+  font-size: 25px;
+  font-weight: 700;
+  color: rgba(15, 23, 43, 1);
+}
+
 p {
   font-size: 16px;
-  color: rgba(255, 255, 255, 1);
+  color: rgba(102, 101, 101, 1);
+}
+
+.fancy-text {
+  color: rgba(254, 161, 22, 1);
+  font-size: 20px;
+  font-family: 'Pacifico';
+  font-weight: 400;
+}
+
+.vertical-line {
+  background-color: rgba(254, 161, 22, 1);
+  height: 2px;
+  width: 45px;
 }
 
 .container {
@@ -45,6 +64,10 @@ p {
 @media (min-width: 768px) {
   h1 {
     font-size: 40px;
+  }
+
+  h2 {
+    font-size: 28px;
   }
 
   p {
@@ -80,6 +103,13 @@ p {
   p {
     font-size: 16px;
   }
+  .container {
+    padding: 0 180px;
+  }
+}
+
+/* Desktop styles xl */
+@media (min-width: 1920px) {
   .container {
     padding: 0 250px;
   }
