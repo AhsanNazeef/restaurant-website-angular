@@ -1,0 +1,44 @@
+:host {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 39.15px 0px rgba(0, 0, 0, 0.08);
+  border: 1px solid white;
+  border-radius: 2px;
+  width: 100%;
+  align-items: center;
+  padding: 20px;
+  gap: 19px;
+
+  &:hover {
+    padding-bottom: 0;
+
+    .socials {
+      display: flex;
+    }
+  }
+}
+
+.user-image {
+  width: 219px;
+  height: 219px;
+  border-radius: 109px;
+  object-fit: cover;
+}
+
+.socials {
+  display: none;
+  gap: 8px;
+}
+
+.social {
+  background-color: rgba(253, 170, 45, 1);
+  padding: 12px;
+  border-top-left-radius: 19px;
+  border-top-right-radius: 19px;
+}
+
+.social-image {
+  width: 15px;
+  height: 15px;
+}

@@ -8,6 +8,10 @@
   gap: 60px;
 }
 
+.heading-container {
+  justify-content: start;
+}
+
 .image-container {
   display: grid;
   grid-template-columns: 1fr 1fr;

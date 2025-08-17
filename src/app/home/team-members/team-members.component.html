@@ -1,0 +1,21 @@
+<div>
+  <div class="heading-container">
+    <div class="vertical-line"></div>
+    <h3 class="fancy-text">Team Members</h3>
+    <div class="vertical-line"></div>
+  </div>
+  <h2 class="sub-heading">Our Master Chefs</h2>
+</div>
+
+<div class="team-members-wrapper">
+  @for (teamMember of teamMembers; track teamMember) {
+  <app-team-member-card
+    [fullName]="teamMember.fullName"
+    [designation]="teamMember.designation"
+    [imgSrc]="teamMember.imgSrc"
+    [facebookUrl]="teamMember.facebookUrl"
+    [twitterUrl]="teamMember.twitterUrl"
+    [instagramUrl]="teamMember.instagramUrl"
+  ></app-team-member-card>
+  }
+</div>
