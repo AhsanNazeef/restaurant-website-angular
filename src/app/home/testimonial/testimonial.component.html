@@ -1,0 +1,19 @@
+<div>
+  <div class="heading-container">
+    <div class="vertical-line"></div>
+    <h3 class="fancy-text">Testimonial</h3>
+    <div class="vertical-line"></div>
+  </div>
+  <h2 class="sub-heading">Our Clients Say!!!</h2>
+</div>
+
+<div class="testimonials-wrapper">
+  @for (testimonial of testimonials; track testimonial) {
+  <app-testimonial-card
+    [testimonialText]="testimonial.testimonialText"
+    [imgSrc]="testimonial.imgSrc"
+    [username]="testimonial.username"
+    [profession]="testimonial.profession"
+  ></app-testimonial-card>
+  }
+</div>

@@ -1,0 +1,40 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 25px 27px;
+  border: 1px solid rgba(222, 226, 230, 1);
+  background-color: rgba(255, 255, 255, 1);
+  gap: 16px;
+  border-radius: 2px;
+
+  &:hover {
+    background-color: rgba(254, 161, 22, 1);
+    border-color: rgba(254, 161, 22, 1);
+
+    * {
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+}
+
+.img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+
+.quote-icon {
+  color: rgba(254, 161, 22, 1);
+}
+
+.testimonial-details {
+  display: flex;
+  gap: 16px;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}

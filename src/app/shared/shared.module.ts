@@ -6,10 +6,11 @@ import { ButtonComponent } from './button/button.component';
 import { DetailsCardComponent } from './details-card/details-card.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { TestimonialCardComponent } from './testimonial-card/testimonial-card.component';
 
 @NgModule({
-  declarations: [ButtonComponent, NavbarComponent, FooterComponent, DetailsCardComponent],
+  declarations: [ButtonComponent, NavbarComponent, FooterComponent, DetailsCardComponent, TestimonialCardComponent],
   imports: [CommonModule, FontAwesomeModule, RouterLink, RouterLinkActive],
-  exports: [ButtonComponent, NavbarComponent, FooterComponent, DetailsCardComponent]
+  exports: [ButtonComponent, NavbarComponent, FooterComponent, DetailsCardComponent, TestimonialCardComponent]
 })
 export class SharedModule {}

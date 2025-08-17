@@ -38,9 +38,20 @@ h2 {
   color: rgba(15, 23, 43, 1);
 }
 
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(15, 23, 43, 1);
+}
+
 p {
   font-size: 16px;
   color: rgba(102, 101, 101, 1);
+}
+
+.sub-heading {
+  font-size: 28px;
+  color: rgba(15, 23, 43, 1);
 }
 
 .fancy-text {
@@ -60,6 +71,13 @@ p {
   padding: 0 22px;
 }
 
+.heading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
 /* Tablet styles */
 @media (min-width: 768px) {
   h1 {
@@ -72,6 +90,10 @@ p {
 
   p {
     font-size: 16px;
+  }
+
+  .sub-heading {
+    font-size: 34px;
   }
 
   .container {
@@ -87,6 +109,10 @@ p {
 
   p {
     font-size: 16px;
+  }
+
+  .sub-heading {
+    font-size: 40px;
   }
 
   .container {
