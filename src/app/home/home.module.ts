@@ -8,9 +8,19 @@ import { DetailsSectionComponent } from './details-section/details-section.compo
 import { AboutUsComponent } from './about-us/about-us.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
 import { TeamMembersComponent } from './team-members/team-members.component';
+import { ReservationsComponent } from './reservations/reservations.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [HomeComponent, HeroSectionComponent, DetailsSectionComponent, AboutUsComponent, TestimonialComponent, TeamMembersComponent],
-  imports: [FontAwesomeModule, CommonModule, SharedModule]
+  declarations: [
+    HomeComponent,
+    HeroSectionComponent,
+    DetailsSectionComponent,
+    AboutUsComponent,
+    TestimonialComponent,
+    TeamMembersComponent,
+    ReservationsComponent
+  ],
+  imports: [FontAwesomeModule, CommonModule, SharedModule, ReactiveFormsModule]
 })
 export class HomeModule {}

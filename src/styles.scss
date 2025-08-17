@@ -49,6 +49,20 @@ p {
   color: rgba(102, 101, 101, 1);
 }
 
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid rgba(206, 212, 218, 1);
+  border-radius: 2px;
+
+  &:focus-visible {
+    outline: 1px solid rgba(254, 161, 22, 1);
+    border: 1px solid rgba(254, 161, 22, 1);
+  }
+}
+
 .sub-heading {
   font-size: 28px;
   color: rgba(15, 23, 43, 1);

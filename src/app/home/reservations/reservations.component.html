@@ -1,0 +1,37 @@
+<img src="/assets/images/reservations.png" alt="Reservations" />
+<div class="reservations-content">
+  <div class="heading-container">
+    <h3 class="fancy-text">Reservations</h3>
+    <div class="vertical-line"></div>
+  </div>
+  <h2 class="sub-heading">Book A table Online</h2>
+  <form [formGroup]="reservationForm" class="reservation-form" (ngSubmit)="onSubmit()">
+    <div class="form-row">
+      <input placeholder="Name" formControlName="name" />
+      <input placeholder="Email" formControlName="email" />
+    </div>
+    <div class="form-row">
+      <input type="datetime-local" formControlName="datetime" />
+      <select formControlName="people">
+        <option value="" disabled selected>Number of People</option>
+        <option value="1">People 1</option>
+        <option value="2">People 2</option>
+        <option value="3">People 3</option>
+        <option value="4">People 4</option>
+      </select>
+    </div>
+    <textarea placeholder="Special Requests" rows="3" formControlName="requests"></textarea>
+    <div *ngIf="submitted && reservationForm.invalid" class="form-errors">
+      {{ getFirstError() }}
+    </div>
+    <app-button label="BOOK NOW"></app-button>
+  </form>
+
+  <div *ngIf="showDialog" class="dialog-backdrop">
+    <div class="dialog">
+      <h3>Reservation Details</h3>
+      <pre>{{ dialogData | json }}</pre>
+      <app-button label="Close" (click)="closeDialog()"></app-button>
+    </div>
+  </div>
+</div>
