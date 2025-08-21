@@ -26,8 +26,8 @@
 }
 
 img {
-  height: 310px;
-  width: 310px;
+  height: 220px;
+  width: 220px;
 }
 
 app-button {
@@ -45,6 +45,13 @@ p {
   gap: 24px;
   align-items: center;
   text-align: center;
+}
+
+@media (min-width: 420px) {
+  img {
+    height: 300px;
+    width: 300px;
+  }
 }
 
 /* Tablet styles */
