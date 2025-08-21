@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { BackToTopComponent } from './back-to-top/back-to-top.component';
 import { ButtonComponent } from './button/button.component';
 import { DetailsCardComponent } from './details-card/details-card.component';
 import { FooterComponent } from './footer/footer.component';
@@ -18,7 +19,8 @@ import { TestimonialCardComponent } from './testimonial-card/testimonial-card.co
     DetailsCardComponent,
     TestimonialCardComponent,
     TeamMemberCardComponent,
-    MenuItemComponent
+    MenuItemComponent,
+    BackToTopComponent
   ],
   imports: [CommonModule, FontAwesomeModule, RouterLink, RouterLinkActive],
   exports: [
@@ -28,7 +30,8 @@ import { TestimonialCardComponent } from './testimonial-card/testimonial-card.co
     DetailsCardComponent,
     TestimonialCardComponent,
     TeamMemberCardComponent,
-    MenuItemComponent
+    MenuItemComponent,
+    BackToTopComponent
   ]
 })
 export class SharedModule {}
