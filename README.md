@@ -5,6 +5,18 @@ Designed for performance, accessibility, and a delightful user experience.
 
 ---
 
+## 🚀 Pages
+
+- **Home Page:**
+<img width="1920" height="4662" alt="Image" src="https://github.com/user-attachments/assets/9546fe94-689e-413a-874a-a90b48b2306d" />
+
+
+- **Contact Page:**
+<img width="1920" height="1224" alt="Image" src="https://github.com/user-attachments/assets/995d2877-31a8-485e-aefa-40f2e20dccc8" />
+
+
+---
+
 ## 🚀 Features
 
 - **Home Page:** Hero section, details, about us, popular menu, reservations, team members, testimonials.
