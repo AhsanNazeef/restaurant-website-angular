@@ -1,12 +1,12 @@
 <div class="navbar-container">
-  <div class="logo">
+  <a routerLink="/" class="logo">
     <img src="/assets/images/logo.png" alt="Logo" class="logo-image" />
     <h2 class="logo-text">FoodFront</h2>
-  </div>
+  </a>
   <fa-icon [icon]="faBars" class="fa-lg menu-icon" (click)="toggleNavLinks()"></fa-icon>
 </div>
 <div class="nav-links" [class.open]="showNavLinks">
-  <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
-  <a routerLink="/contact" routerLinkActive="active">Contact</a>
+  <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="toggleNavLinks()">Home</a>
+  <a routerLink="/contact" routerLinkActive="active" (click)="toggleNavLinks()">Contact</a>
   <app-button label="Book A Table"></app-button>
 </div>

@@ -1,0 +1,87 @@
+<div>
+  <div class="heading-container">
+    <div class="vertical-line"></div>
+    <h3 class="fancy-text">Contact Us</h3>
+    <div class="vertical-line"></div>
+  </div>
+  <h2 class="sub-heading">Contact For Any Query</h2>
+</div>
+<div class="contact-info">
+  <div class="booking">
+    <div class="heading">
+      <h3 class="fancy-text">Booking</h3>
+      <div class="vertical-line"></div>
+    </div>
+    <div class="email">
+      <fa-icon [icon]="faEnvelopeOpen" class="fa-lg menu-icon"></fa-icon>
+      <p>booking&#64;example.com</p>
+    </div>
+  </div>
+  <div class="general">
+    <div class="heading">
+      <h3 class="fancy-text">General</h3>
+      <div class="vertical-line"></div>
+    </div>
+    <div class="email">
+      <fa-icon [icon]="faEnvelopeOpen" class="fa-lg menu-icon"></fa-icon>
+      <p>general&#64;example.com</p>
+    </div>
+  </div>
+  <div class="technical">
+    <div class="heading">
+      <h3 class="fancy-text">Technical</h3>
+      <div class="vertical-line"></div>
+    </div>
+    <div class="email">
+      <fa-icon [icon]="faEnvelopeOpen" class="fa-lg menu-icon"></fa-icon>
+      <p>technical&#64;example.com</p>
+    </div>
+  </div>
+</div>
+
+<div class="form-section">
+  <iframe
+    id="gmap_canvas"
+    src="https://maps.google.com/maps?q=636+5th+Ave%2C+New+York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+    frameborder="0"
+    scrolling="no"
+    marginheight="0"
+    marginwidth="0"
+  ></iframe>
+  <form class="contact-form" #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+    <div class="form-row">
+      <input placeholder="Name" name="name" maxlength="50" [(ngModel)]="name" required #nameCtrl="ngModel" (ngModelChange)="submitted = false" />
+      <input placeholder="Email" name="email" [(ngModel)]="email" required email #emailCtrl="ngModel" (ngModelChange)="submitted = false" />
+    </div>
+    <input
+      placeholder="Subject"
+      name="subject"
+      [(ngModel)]="subject"
+      maxlength="100"
+      required
+      #subjectCtrl="ngModel"
+      (ngModelChange)="submitted = false"
+    />
+    <textarea
+      placeholder="Message"
+      rows="3"
+      name="message"
+      [(ngModel)]="message"
+      maxlength="500"
+      #messageCtrl="ngModel"
+      (ngModelChange)="submitted = false"
+    ></textarea>
+    <div *ngIf="submitted && contactForm.invalid" class="form-errors">
+      {{ getFirstError(nameCtrl, emailCtrl, subjectCtrl, messageCtrl) }}
+    </div>
+    <app-button label="SEND MESSAGE"></app-button>
+  </form>
+</div>
+
+<div *ngIf="showDialog" class="dialog-backdrop">
+  <div class="dialog">
+    <h3>Email Sent</h3>
+    <pre>{{ dialogData | json }}</pre>
+    <app-button label="Close" (click)="closeDialog()"></app-button>
+  </div>
+</div>
