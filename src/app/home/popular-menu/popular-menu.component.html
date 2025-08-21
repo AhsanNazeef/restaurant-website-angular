@@ -1,0 +1,26 @@
+<div>
+  <div class="heading-container">
+    <div class="vertical-line"></div>
+    <h3 class="fancy-text">Food Menu</h3>
+    <div class="vertical-line"></div>
+  </div>
+  <h2 class="sub-heading">Most Popular Items</h2>
+</div>
+<div class="menu-types">
+  <div *ngFor="let menu of menuTypes; let i = index" class="menu-type" [class.selected]="selectedIndex === i" (click)="selectType(i)">
+    <fa-icon [icon]="menu.icon" class="fa-2x"></fa-icon>
+    <div class="menu-info">
+      <p>{{ menu.label }}</p>
+      <h4>{{ menu.type }}</h4>
+    </div>
+  </div>
+</div>
+<div class="menu-items">
+  <app-menu-item
+    *ngFor="let item of selectedMenuItem"
+    [name]="item.name"
+    [description]="item.description"
+    [price]="item.price"
+    [imgSrc]="item.imgSrc"
+  ></app-menu-item>
+</div>

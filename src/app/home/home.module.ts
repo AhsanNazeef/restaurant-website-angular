@@ -10,6 +10,7 @@ import { TestimonialComponent } from './testimonial/testimonial.component';
 import { TeamMembersComponent } from './team-members/team-members.component';
 import { ReservationsComponent } from './reservations/reservations.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PopularMenuComponent } from './popular-menu/popular-menu.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     AboutUsComponent,
     TestimonialComponent,
     TeamMembersComponent,
-    ReservationsComponent
+    ReservationsComponent,
+    PopularMenuComponent
   ],
   imports: [FontAwesomeModule, CommonModule, SharedModule, ReactiveFormsModule]
 })
