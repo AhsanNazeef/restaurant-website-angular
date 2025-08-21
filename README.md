@@ -1,59 +1,125 @@
-# RestaurantWebsiteAngular
+# 🍽️ Restaurant Website Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.4.
+A modern, responsive restaurant website built with Angular. Features include online reservations, team showcase, testimonials, contact form, and more.  
+Designed for performance, accessibility, and a delightful user experience.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🚀 Features
+
+- **Home Page:** Hero section, details, about us, popular menu, reservations, team members, testimonials.
+- **Online Reservations:** Book a table with validation and confirmation dialog.
+- **Contact Page:** Contact info, embedded map, and a validated contact form.
+- **Team Showcase:** Meet the master chefs with social links.
+- **Testimonials:** Client feedback carousel.
+- **Back to Top Button:** Smooth scroll, visible only when needed.
+- **Responsive Design:** Mobile-first, adapts to all screen sizes.
+- **FontAwesome Icons:** Beautiful icons throughout the site.
+- **Optimized Images:** Lazy loading and modern formats for fast performance.
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+  app/
+    home/           # Home page modules & components
+    contact/        # Contact page modules & components
+    shared/         # Shared UI components (navbar, footer, button, cards, etc.)
+  assets/
+    fonts/          # Custom fonts
+    images/         # Site images
+  styles.scss       # Global styles
+  index.html        # App entry point
+public/
+  logo.png          # Favicon/logo
+.angular/
+.vscode/
+```
+
+---
+
+## 🛠️ Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18+ recommended)
+- [Angular CLI](https://angular.dev/tools/cli)
+
+### Installation
+
+```bash
+npm install
+```
+
+### Development Server
 
 ```bash
 ng serve
 ```
+Visit [http://localhost:4200](http://localhost:4200) in your browser.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+### Building for Production
 
 ```bash
 ng build
 ```
+Builds the app for production in the `dist/` folder.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+## 🧪 Testing
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### Unit Tests
 
 ```bash
 ng test
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+### End-to-End Tests
 
 ```bash
 ng e2e
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+---
 
-## Additional Resources
+## ✨ Customization
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- **Global Styles:** Edit [`src/styles.scss`](src/styles.scss)
+- **Images:** Replace or optimize images in [`src/assets/images/`](src/assets/images/)
+- **Fonts:** Add custom fonts in [`src/assets/fonts/`](src/assets/fonts/)
+- **Components:** Extend or modify shared components in [`src/app/shared/`](src/app/shared/)
+
+---
+
+## 📦 Dependencies
+
+- Angular 19
+- FontAwesome
+- SCSS
+
+---
+
+## 🌐 Deployment
+
+- Build with `ng build --configuration production`
+- Deploy the contents of `dist/restaurant-website-angular` to your preferred hosting (Netlify, Vercel, Firebase, etc.)
+
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+> _Made with ❤️ by your team using Angular_
